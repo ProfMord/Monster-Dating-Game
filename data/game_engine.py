@@ -1,5 +1,9 @@
 import sys,time,random
-import pickle 
+import pickle
+import item_def
+from inventory_def import Inventory
+
+inv = Inventory
 
 def slow_type(t):
     typing_speed = 150 #75 #wpm
