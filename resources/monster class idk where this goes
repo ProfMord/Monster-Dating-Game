@@ -37,3 +37,10 @@ class Monster:
         self.desc = "H...how does that even work???"
     if self.type == "A guy dressed up like a ghost"
         self.desc = "Just some guy wearing a bedsheet that falls mid-calf. He doesn't appear to be wearing anything underneath, aside from a pair of socks."
+
+    @classmethod
+    def receive_gift(self, gift):
+        if gift in self.likes:
+            #do something with liked gift
+        else:
+            #do something with hated gift
