@@ -1,0 +1,38 @@
+# i do not know where to put the actual story stuff of the game?
+#choices will determine stats and starting items
+
+from player import Player
+
+def intro():
+    print("Hey, you're new in town, aren't ya? Anyway, haven't seen you before.")
+    print("What's yer name?")
+
+    !Player = name(input("Please enter your name"))
+
+    print("Well nice to meet ya,", !Player.name, ". What brings you to Assrock?") #placeholder town name
+    print("a. I heard you guys had a monster problem. I'm here to deal with it.
+            b. I literally do not know how I got here. I was trying to get to Shortown.
+            c. Just passing through.")
+
+    choice = input(">>> ")
+
+    if choice in answer_a:
+        Player.charisma += 2
+        print("Straight to the point, aren't you? Well, I don't know too much about that. 
+        The tavern is pretty insulated from what goes on in the outskirts. 
+        You'll have to ask someone else.")
+        option.next()
+    elif choice in answer_b: 
+        Player.charisma -= 3
+        print("Wow, uh. Shortown is twenty miles in the opposite direction. 
+        I don't know how you ended up here.")
+        option.next()
+    elif choice in answer_c: 
+        Player.charisma += 3
+        print("I see, you're one of those purposefully mysterious types, aren't ya? 
+        Some folks can't get enough of your kind of people.")
+        option.next()
+
+#how would i import the stat changes back to player file? this is a problem for the future
+
+def option.next()

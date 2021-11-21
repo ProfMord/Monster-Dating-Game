@@ -44,3 +44,5 @@ class Monster:
             #do something with liked gift
         else:
             #do something with hated gift
+
+

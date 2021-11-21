@@ -1,0 +1,11 @@
+class Player:
+    '''the player'''
+    def __init__(self, name):
+        self.name = name
+        self.inventory =
+        self.hp =35
+        self.charisma = 10
+#would like for it to import the stat changes established by the player's choices in intro.player
+#also possible that some items could influence stat changes
+# will implement a charisma threshold or whatever for each monster which will define success of befriending/seducing items
+
