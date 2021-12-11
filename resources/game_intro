@@ -1,0 +1,135 @@
+# i do not know where to put the actual story stuff of the game?
+#choices will determine stats and starting items
+
+from player import Player
+
+def intro():
+    print("'Hey, you're new in town, aren't ya? Anyway, haven't seen you before.'")
+    print("'What's yer name?'")
+
+    !Player = name(input("Please enter your name"))
+
+    print("'Well nice to meet ya,", !Player.name, ". What brings you to Assrock?'") #placeholder town name
+    print("a. I heard you guys had a monster problem. I'm here to deal with it.
+            b. I literally do not know how I got here. I was trying to get to Shortown.
+            c. Just passing through.")
+
+    choice = input(">>> ")
+
+    if choice in answer_a:
+        #Player.charisma += 2
+        print("'Straight to the point, aren't you? Well, I don't know too much about that. 
+        The tavern is pretty insulated from what goes on in the outskirts. 
+        You'll have to ask someone else.'")
+        option.next()
+    elif choice in answer_b: 
+        #Player.charisma -= 3
+        print("'Wow, uh. Shortown is twenty miles in the opposite direction. 
+        I don't know how you ended up here.'")
+        option.next()
+    elif choice in answer_c: 
+        #Player.charisma += 3
+        print("'I see, you're one of those purposefully mysterious types, aren't ya? 
+        Some folks can't get enough of your kind of people.'")
+        option.next()
+
+#how would i import the stat changes back to player file? this is a problem for the future
+
+def option.next():
+    print("'Anyway, what can I do ya for? I'm guessing you're in my tavern for a reason.'")
+    print("a. I'm here to DRINK. Doesn't matter what.
+        b. I want a vodka soda, please.
+        c. Give me the SHITTIEST beer you have bro. Everything else is gay shit.
+        d. Sorry I only drink piss.")
+    choice = input(">>> ")
+    if choice in answer_a:
+        #Player.maxhp += 25
+        print("'One surprise drink coming right up.'")
+        option.next1()
+    elif choice in answer_b: 
+        #Player.maxhp += 37
+        print("'One vodka soda coming right up.'")
+        option.next1()
+    elif choice in answer_c: 
+        #Player.maxhp += 22
+        print("'Oh, you're here for the douchebag special.'")
+        option.next1()
+    elif choice in answer_d:
+        #Player.maxhp += 45
+        print("'Uh. Ok. I mean, ok. Sure. I'll get that for ya.'")
+        option.next1()
+
+    # whatever would import these back to the player file LOL i was hoping my partner would do this part.
+
+def option.next1():
+    print("Before the bartender is able to make your drink, however, the MAYOR of 
+    ASSTOWN bursts through the door, seemingly out of breath.")
+    print("'HELP' the mayor says, 'There are MONSTERS attacking MY HOUSE!'")
+    print("a. Go help him out
+           b. Ignore him")
+        choice = input(">>> ")
+    if choice in answer_a:
+        option.house():
+    if choice in answer_b:
+        option.ignore():
+
+def option.ignore():
+    print("The mayor keeps shouting: 'Didn't you hear me? I said MONSTERS are attacking my HOUSE. I need help!'")
+    print("a. Go help him out
+           b. Ignore him")
+    choice = input(">>> ")
+    if choice in answer_a:
+        option.house():
+    if choice in answer_b:
+        option.ignore1():
+def option.ignore1():
+    print("'There are literally monsters tearing people limb from limb. 
+    There's BLOOD and STUFF everywhere!'") #he's lying but thats not important
+    print("a. Go help him out
+           b. Ignore him")
+    choice = input(">>> ")
+    if choice in answer_a:
+        option.house():
+    if choice in answer_b:
+        option.ignore2():
+def option.ignore2():
+    print("I'm serious! There's monsters attacking my house and other houses!")
+    print("a. Go help him out
+           b. Keep ignoring him")
+    choice = input(">>> ")
+    if choice in answer_a:
+        option.house():
+    if choice in answer_b:
+        option.ignore3():
+def option.ignore3():
+    print("'Do you think you're being funny?' the mayor asks, obviously irritated, 
+    'Is this a joke to you? You think this is FUNNY? People are DYING " !Player.name "!!'")
+    print("a. 'It's really funny, actually.'
+           b. Keep ignoring him")
+    choice = input(">>> ")
+    if choice in answer_a:
+        print("'Is people losing their homes funny to you??'")
+        print("a. Yes. It's hilarious. I'm nearly peeing myself I'm laughing so hard.)
+        choice = input(">>> ") #doesn't matter lol
+        option.ignore2():
+    if choice in answer_b:
+        print("'You're seriously not even going to acknowledge me??' the mayor shouts before leaving the tavern.")
+        option.ignore4():
+
+def option.ignore4():
+    print("You sit around for a while, drinking your drink of choice completely unbothered. Suddenly, the mayor busts in AGAIN, this time kicking the door off its hinges.")
+    print("HELP' the mayor says, 'There are MONSTERS attacking MY HOUSE!'")
+    print("a. Go help him out
+           b. Ignore him")
+        choice = input(">>> ")
+    if choice in answer_a:
+        option.house():
+    if choice in answer_b:
+        option.ignore():
+
+def option.house():
+    print("congratulations, this is as far as I'm willing to code this game, and you got there.")
+    import urllib.parse
+    s = urllib.parse.quote('www.youtube.com/watch?v=2KH2gc11XQU')
+    print('https://'+s)
+    

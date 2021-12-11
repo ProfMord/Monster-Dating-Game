@@ -1,0 +1,48 @@
+def rCreachure(): 
+# generates a random number between 0 and undecided and uses that to determine what type of monster player faces
+    import random
+    rngMonster = randint(0,4) #lets just say theres 5 types of monsters not including the boss
+    #maybe we can also sort the monsters by difficulty idk
+    if (rngMonster == 0):
+        mName = "Ooze"
+    elif (rngMonster == 1):
+        mName = "Pterodactyl"
+    elif (rngMonster == 2)
+        mName = "It's just James"
+    elif (rngMonster == 3):
+        mName = "A Unicorn smoking a blunt"
+    elif (rngMonster == 4):
+        mName = "A blunt... smoking a unicorn??"
+    elif (rngMonster == 5):
+        mName = "A guy dressed up like a ghost"
+    return mName
+
+#def killCount(x):
+    #will determine what options are available when encountering a monster
+
+class Monster:
+#creates monster objects
+    def __init__(self, type): #will include stats too, but idk about scaling
+    self.type = mName
+    #will add other attributes later this week
+    if self.type == "Ooze"
+        self.desc = "It's just a run-of-the-mill pile of slime of indeterminate gender."
+    if self.type == "Pterodactyl"
+        self.desc = "It's a pterodactyl... with a disturbingly muscular and humanoid physique."
+    if self.type == "It's just James"
+        self.desc = "Oh god. What the hell is he doing here?"
+    if self.type == "A Unicorn smoking a blunt"
+        self.desc = "A Unicorn smoking a blunt and wearing aviator shades. Literally the coolest thing you've ever seen. You will never see something cooler than this."
+    if self.type == "A blunt... smoking a Unicorn??"
+        self.desc = "H...how does that even work???"
+    if self.type == "A guy dressed up like a ghost"
+        self.desc = "Just some guy wearing a bedsheet that falls mid-calf. He doesn't appear to be wearing anything underneath, aside from a pair of socks."
+
+    @classmethod
+    def receive_gift(self, gift):
+        if gift in self.likes:
+            #do something with liked gift
+        else:
+            #do something with hated gift
+
+
